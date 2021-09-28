@@ -1,0 +1,162 @@
+body {
+
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #F2F2F2;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-size: 15px;
+
+}
+
+h2 {
+
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+}
+
+p {
+
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 15% 0;
+    width: 100%;
+
+
+}
+
+
+.outer-container {
+
+    width: 60%;
+    margin: 7% auto;
+    display: flex;
+
+}
+
+.inner-box-1,
+.inner-box-2,
+.inner-box-3 {
+
+    padding: 5% 5%;
+    width: 33.333%
+
+}
+
+.inner-box-1 {
+
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+    transition: all 0.2s ease;
+
+}
+
+.inner-box-2 {
+
+    background-color: hsl(184, 100%, 22%);
+    transition: all 0.2s ease;
+
+}
+
+.inner-box-3 {
+
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0;
+    transition: all 0.2s ease;
+
+}
+
+.button {
+
+    border: 2px solid white;
+    background: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 50px;
+    transition: all 0.2s ease;
+
+}
+
+.button:hover {
+
+    cursor: pointer;
+    background-color: hsl(0, 0%, 44%);
+
+}
+
+@media (max-width: 414px) {
+
+    .outer-container {
+
+        flex-direction: column;
+        width: 88%;
+
+    }
+
+    .inner-box-1,
+    .inner-box-2,
+    .inner-box-3 {
+
+        padding: 15% 15%;
+
+    } 
+
+    .button {
+
+        background: white;
+        height: 50px;
+        width: 150px;
+        border-radius: 25px;
+        margin-top: 0;
+
+    }
+
+    .inner-box-1 button {
+
+        color:hsl(31, 77%, 52%);
+
+    }
+
+    .inner-box-2 button {
+
+        color:hsl(184, 100%, 22%);
+
+    }
+
+    .inner-box-3 button {
+
+        color:hsl(179, 100%, 13%);
+        
+
+    }
+    
+    .inner-box-1 {
+
+        border-radius: 10px 10px 0 0;
+
+    }
+
+    .inner-box-3 {
+
+        border-radius: 0 0 10px 10px;
+
+    }
+    
+}
+
+@media (max-width: 930px) {
+
+
+    .outer-container {
+
+        width: 80%;
+
+    }
+
+}
